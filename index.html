@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Binance Baby - Make MEME on BNB chain great again</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta property="og:description" content="Binance Baby - Make MEME on BNB chain great again.">
+    <meta name="description" content="Binance Baby - Make MEME on BNB chain great again.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="https://pbs.twimg.com/media/DjGh7lGV4AA-ImZ?format=jpg&name=large" type="image/x-icon">
+</head>
+<body class="bg-[#191a1f] text-white">
+    <div class="container mx-auto px-4">
+        <nav class="flex justify-between items-center py-6">
+            <div class="flex items-center space-x-4">
+                <img src="https://pbs.twimg.com/media/DjGh7lGV4AA-ImZ?format=jpg&name=large" alt="Binance Baby Logo" class="w-12 h-12 rounded-full">
+                <h1 class="text-2xl font-bold" style="color: #f1b90c;">Binance Baby</h1>
+            </div>
+        </nav>
+
+        <header class="text-center py-20">
+            <h2 class="text-6xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">
+                Binance Baby 🐂
+            </h2>
+            <p class="text-2xl mb-10 text-gray-300 max-w-2xl mx-auto">
+                If you used Binance please feed me.<br>
+                Make MEME on BNB chain great again.
+            </p>
+            <div class="space-x-4">
+                <a 
+                    href="https://pancakeswap.finance/?outputCurrency=0x9eD23ec83408e74aa73f94EaAC9a26b68c96Feed" 
+                    target="_blank" 
+                    class="bg-gradient-to-r from-yellow-500 to-orange-600 text-black px-8 py-4 rounded-full transform hover:scale-105 transition duration-300 inline-block"
+                >
+                    Buy Binance Baby on pancakeswap
+                </a>
+                <a 
+                    href="https://four.meme/token/0x9ed23ec83408e74aa73f94eaac9a26b68c96feed" 
+                    target="_blank" 
+                    class="bg-gradient-to-r from-yellow-500 to-orange-600 text-black px-8 py-4 rounded-full transform hover:scale-105 transition duration-300 inline-block"
+                >
+                    Buy Binance Baby on Four Meme
+                </a>
+            </div>
+ 
+        </header>
+
+        <section class="rounded-xl shadow-lg p-8 my-12">
+            <h3 class="text-3xl font-bold mb-6 text-center" style="color: #f1b90c;">Contract Address</h3>
+            
+            <div class="bg-[#1e2329] rounded-lg p-6 border border-yellow-600/30">
+                <h4 class="text-xl font-semibold mb-4 text-yellow-400 flex items-center justify-between">
+                    <span>Address</span>
+                    <span class="text-sm text-gray-400 flex items-center">
+                        <i class="fas fa-shield-alt mr-2 text-green-500"></i>Verified Contract
+                    </span>
+                </h4>
+                <div class="flex items-center space-x-4 bg-gray-800 rounded-lg p-2">
+                    <input 
+                        type="text" 
+                        id="contractAddress" 
+                        value="0x9ed23ec83408e74aa73f94eaac9a26b68c96feed" 
+                        readonly 
+                        class="bg-transparent text-white px-4 py-2 rounded-lg w-full text-center tracking-wider"
+                    >
+                    <button 
+                        onclick="copyContractAddress()" 
+                        class="bg-yellow-500 text-black px-4 py-2 rounded-lg hover:bg-yellow-600 transition duration-300 flex items-center"
+                    >
+                        <i class="fas fa-copy mr-2"></i>Copy
+                    </button>
+                </div>
+                <div class="mt-3 text-center">
+                    <a href="https://bscscan.com/address/0x9ed23ec83408e74aa73f94eaac9a26b68c96feed" 
+                       target="_blank" 
+                       class="text-sm text-blue-400 hover:text-blue-300 transition duration-300">
+                        <i class="fas fa-external-link-alt mr-2"></i>View on BscScan
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class=" rounded-xl shadow-lg p-12 text-center">
+            <div class="flex justify-center space-x-6">
+                <a href="https://x.com/binancebabybsc" target="_blank" class="text-5xl text-yellow-500 hover:text-yellow-700">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </section>
+
+        <footer class="text-center py-8 mt-8">
+            <p class="text-gray-500">© 2024 Binance Baby. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function copyContractAddress() {
+            const contractAddressInput = document.getElementById('contractAddress');
+            contractAddressInput.select();
+            contractAddressInput.setSelectionRange(0, 99999);
+            
+            navigator.clipboard.writeText(contractAddressInput.value).then(() => {
+                alert('Contract address copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
